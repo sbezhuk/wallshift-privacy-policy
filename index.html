@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - WallShift</title>
-  <meta name="description" content="Privacy Policy for WallShift - iOS Arcade Game by Stepan Bezhuk.">
+  <title>Privacy Policy - WallShift (Age 4+)</title>
+  <meta name="description" content="Privacy Policy for WallShift - iOS Game by Stepan Bezhuk. Zero data collection policy. Rated for ages 4+.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22 0%22 100%22 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
   <style>
     :root {
@@ -19,7 +19,8 @@
       --accent-glow: rgba(56, 189, 248, 0.15);
       --badge-bg: rgba(56, 189, 248, 0.12);
       --badge-text: #38bdf8;
-      --highlight: #a855f7;
+      --badge-green-bg: rgba(34, 197, 94, 0.15);
+      --badge-green-text: #4ade80;
     }
 
     * {
@@ -37,7 +38,7 @@
       min-height: 100vh;
       background-image: 
         radial-gradient(circle at 15% 15%, rgba(56, 189, 248, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 85% 85%, rgba(168, 85, 247, 0.08) 0%, transparent 40%);
+        radial-gradient(circle at 85% 85%, rgba(34, 197, 94, 0.08) 0%, transparent 40%);
       background-attachment: fixed;
     }
 
@@ -67,6 +68,13 @@
       margin-bottom: 1.25rem;
     }
 
+    .badges {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
     .badge {
       display: inline-flex;
       align-items: center;
@@ -80,6 +88,12 @@
       letter-spacing: 0.03em;
       text-transform: uppercase;
       border: 1px solid rgba(56, 189, 248, 0.2);
+    }
+
+    .badge.green {
+      background: var(--badge-green-bg);
+      color: var(--badge-green-text);
+      border-color: rgba(34, 197, 94, 0.3);
     }
 
     .lang-switcher {
@@ -120,6 +134,31 @@
     .subtitle {
       color: var(--text-muted);
       font-size: 0.95rem;
+    }
+
+    .highlight-card {
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.12) 0%, rgba(56, 189, 248, 0.08) 100%);
+      border: 1px solid rgba(34, 197, 94, 0.25);
+      border-radius: 1.25rem;
+      padding: 1.75rem 2rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .highlight-card h3 {
+      font-size: 1.25rem;
+      color: #4ade80;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .highlight-card p {
+      font-size: 1.05rem;
+      color: #f1f5f9;
+      line-height: 1.6;
     }
 
     .card {
@@ -220,7 +259,7 @@
       header {
         padding: 1.5rem 1.25rem;
       }
-      .card {
+      .card, .highlight-card {
         padding: 1.5rem 1.25rem;
       }
       h1 {
@@ -234,7 +273,11 @@
   <div class="container">
     <header>
       <div class="header-top">
-        <span class="badge">🎮 WallShift &bull; iOS</span>
+        <div class="badges">
+          <span class="badge">🎮 WallShift &bull; iOS</span>
+          <span class="badge green">👶 Age 4+</span>
+          <span class="badge green">🔒 Zero Data Collection</span>
+        </div>
         <div class="lang-switcher">
           <button class="lang-btn active" onclick="switchLanguage('en')">English</button>
           <button class="lang-btn" onclick="switchLanguage('uk')">Українська</button>
@@ -246,206 +289,186 @@
 
     <!-- ENGLISH SECTION -->
     <div id="section-en" class="lang-section active">
-      <div class="card">
-        <h2><span class="icon">ℹ️</span> 1. Introduction</h2>
+      <div class="highlight-card">
+        <h3>🛡️ Summary: No Data Collection</h3>
         <p>
-          Welcome to <strong>WallShift</strong> ("we", "our", or "us"), an iOS arcade game developed by <strong>Stepan Bezhuk</strong>.
-          We respect your privacy and are committed to protecting it.
-        </p>
-        <p>
-          This Privacy Policy explains how information about you is collected, used, and disclosed when you use our mobile application <strong>WallShift</strong> on Apple iOS devices.
+          <strong>WallShift does not collect, store, track, sell, or share any personal information or device data from its players.</strong> The game is rated <strong>4+</strong> and is completely safe and private for players of all ages, including children.
         </p>
       </div>
 
       <div class="card">
-        <h2><span class="icon">💾</span> 2. Information Handled Locally on Your Device</h2>
+        <h2><span class="icon">ℹ️</span> 1. Introduction</h2>
         <p>
-          WallShift is engineered to respect player privacy. We do <strong>not</strong> operate private user registration accounts, and we do <strong>not</strong> maintain a custom backend server to store your personal identity.
+          This Privacy Policy applies to the mobile game <strong>WallShift</strong> ("we", "our", or "us"), developed by <strong>Stepan Bezhuk</strong> for iOS devices.
         </p>
-        <p>The following gameplay data is stored strictly <strong>locally on your device</strong> (via Apple iOS <code>UserDefaults</code> storage):</p>
+        <p>
+          We believe in complete privacy. WallShift is designed to provide fun and engaging gameplay without compromising your privacy or asking for any of your personal data.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2><span class="icon">🚫</span> 2. Information We Do NOT Collect</h2>
+        <p>We do <strong>not</strong> collect any information about you. Specifically:</p>
         <ul>
-          <li><strong>High Scores &amp; Game Statistics:</strong> Best run score, weekly scores, jump counts, dodged obstacles, run counts.</li>
-          <li><strong>Virtual Currency &amp; Unlocks:</strong> In-game coins collected and character themes unlocked.</li>
-          <li><strong>In-game Achievements:</strong> Unlocked and claimed in-game achievements and rewards.</li>
-          <li><strong>Preferences:</strong> Music (BGM) and sound effects (SFX) volume levels and mute status.</li>
-          <li><strong>Ad Reward Timestamps:</strong> Local timestamps used to calculate cooldown timers for bonus rewards.</li>
+          <li><strong>No Personal Information:</strong> We do not ask for or collect names, email addresses, phone numbers, ages, or any identifying details.</li>
+          <li><strong>No Account Registration:</strong> There are no user accounts, passwords, or login requirements.</li>
+          <li><strong>No Tracking &amp; No Analytics:</strong> We do not track your activity, and we do not use third-party analytics services (such as Google Analytics, Firebase, or Facebook SDK).</li>
+          <li><strong>No Device Identifiers:</strong> We do not collect IDFA (Advertising Identifier), IDFV, MAC address, or hardware identifiers.</li>
+          <li><strong>No Location Data:</strong> We do not access or collect GPS, coarse location, or IP-based geolocation data.</li>
+          <li><strong>No Device Permissions:</strong> The game does not request access to your camera, microphone, photos, contacts, or calendar.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2><span class="icon">💾</span> 3. Local Data Storage on Your Device</h2>
+        <p>
+          All game progress and settings are stored <strong>strictly locally on your device</strong> using standard Apple iOS local storage (<code>UserDefaults</code>).
+        </p>
+        <p>This includes:</p>
+        <ul>
+          <li>High scores and game records</li>
+          <li>In-game virtual coins earned through gameplay</li>
+          <li>Unlocked cosmetic character themes and current theme selection</li>
+          <li>In-game achievements and personal milestones</li>
+          <li>Sound and music volume preferences</li>
         </ul>
         <div class="callout">
-          <strong>Note:</strong> Because this data is stored on your device's local storage, uninstalling the app or resetting device data will permanently erase your locally saved game progress.
+          <strong>Important:</strong> This gameplay data never leaves your device. It is not transmitted over the Internet, and the developer has no access to it. You can erase all saved data at any time simply by deleting the app from your device.
         </div>
       </div>
 
       <div class="card">
-        <h2><span class="icon">📢</span> 3. Third-Party Advertising (Unity Ads)</h2>
+        <h2><span class="icon">👶</span> 4. Children’s Privacy (Rated Age 4+)</h2>
         <p>
-          To support the ongoing maintenance and free distribution of WallShift, our game integrates <strong>Unity Ads</strong>, an advertising service operated by <strong>Unity Technologies</strong>.
+          WallShift has an age rating of <strong>4+</strong> (suitable for everyone aged 4 and older) and is designed to be family-friendly and child-safe.
         </p>
-        <p>Unity Ads provides optional rewarded video ads (e.g. to revive after game over or claim daily bonuses) and occasional interstitial ads.</p>
-        <p>When advertisements are requested or displayed, the Unity Ads SDK may collect and process certain technical information, including:</p>
         <ul>
-          <li><strong>Device Identifiers:</strong> Identifier for Advertisers (IDFA, only if you have granted permission via Apple App Tracking Transparency), Identifier for Vendor (IDFV), or Unity-generated pseudonymous identifiers.</li>
-          <li><strong>Technical Device Information:</strong> Device make and model, operating system version, system language, screen resolution, and time zone.</li>
-          <li><strong>Network Information:</strong> IP address (used to infer broad geographic location such as country or city) and connection type.</li>
-          <li><strong>Ad Interaction Data:</strong> Information about ad impressions, views, clicks, and completion of rewarded video ads.</li>
-        </ul>
-        <p>
-          Unity Technologies processes this data in accordance with their own privacy guidelines. For more details, please review the <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Unity Privacy Policy</a>.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2><span class="icon">🌐</span> 4. Network Status Monitoring</h2>
-        <p>
-          The game uses Apple's native <code>NWPathMonitor</code> framework solely to verify active network connectivity before requesting ad availability from the Unity Ads SDK. No network logs, browsing history, or packet inspection are collected, stored, or transmitted.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2><span class="icon">🎯</span> 5. User Choices &amp; Tracking Controls</h2>
-        <p>You have full control over your privacy on Apple iOS devices:</p>
-        <ul>
-          <li><strong>App Tracking Transparency (ATT):</strong> On iOS 14.5 and newer, you can choose whether to allow apps to track your activity across other companies' apps and websites. You can modify your tracking permission at any time in <code>Settings &gt; Privacy &amp; Security &gt; Tracking &gt; WallShift</code>.</li>
-          <li><strong>Personalized Ads:</strong> You can limit personalized advertising system-wide in <code>Settings &gt; Privacy &amp; Security &gt; Apple Advertising</code>.</li>
+          <li>Because our application <strong>does not collect any personal data whatsoever</strong>, it fully complies with the <strong>Children's Online Privacy Protection Act (COPPA)</strong>, the European Union <strong>General Data Protection Regulation (GDPR / GDPR-K)</strong>, and Apple's Family &amp; Kids Category guidelines.</li>
+          <li>We do not knowingly collect or solicit any personal data from children under any age. Parents and guardians can be confident that their children's privacy is 100% protected while playing WallShift.</li>
         </ul>
       </div>
 
       <div class="card">
-        <h2><span class="icon">👶</span> 6. Children's Privacy</h2>
+        <h2><span class="icon">🔗</span> 5. Third-Party Services &amp; Advertising</h2>
         <p>
-          WallShift is intended for a general audience. We do not knowingly collect, request, or solicit personal data from children under the age of 13 (or under 16 in certain jurisdictions such as the European Economic Area).
-        </p>
-        <p>
-          If you believe that a child has provided us with personal information without parental consent, please contact us so we can take appropriate measures.
+          WallShift does not use third-party tracking services or data brokers. No personal data or user behavior is shared with or sold to any third party.
         </p>
       </div>
 
       <div class="card">
-        <h2><span class="icon">⚖️</span> 7. Your Legal Rights (GDPR &amp; CCPA / CPRA)</h2>
-        <p>Depending on your location, you may have statutory rights regarding your personal data:</p>
-        <ul>
-          <li><strong>Right of Access &amp; Portability:</strong> Request details of any personal data processed about you.</li>
-          <li><strong>Right to Deletion:</strong> Request deletion of your personal data. (Locally stored game data can be deleted anytime simply by uninstalling the application).</li>
-          <li><strong>Right to Opt-Out:</strong> Exercise your right to prevent the sharing or sale of your data for cross-context behavioral advertising through iOS device privacy toggles.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2><span class="icon">🔄</span> 8. Changes to This Privacy Policy</h2>
+        <h2><span class="icon">⚖️</span> 6. Your Rights</h2>
         <p>
-          We may update our Privacy Policy periodically to reflect changes in our practices, app updates, or legal obligations. Any updates will be posted on this page with an updated "Last updated" date.
+          Under global privacy laws (including GDPR and CCPA), you have the right to privacy and data control. Because we do not collect or store any of your personal data on any server, there is no personal data to view, export, or delete on our end. All local game progress remains solely in your control on your iOS device.
         </p>
       </div>
 
       <div class="card">
-        <h2><span class="icon">📬</span> 9. Contact Us</h2>
-        <p>If you have any questions, suggestions, or concerns regarding this Privacy Policy, please contact us at:</p>
+        <h2><span class="icon">🔄</span> 7. Changes to This Policy</h2>
+        <p>
+          If we ever update this Privacy Policy, the revised version will be published here with an updated "Last updated" date.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2><span class="icon">📬</span> 8. Contact Us</h2>
+        <p>If you have any questions or feedback regarding this Privacy Policy, please feel free to contact:</p>
         <p>
           <strong>Developer:</strong> Stepan Bezhuk<br>
           <strong>Email:</strong> <a href="mailto:sbezhuk@icloud.com">sbezhuk@icloud.com</a><br>
-          <strong>Repository:</strong> <a href="https://github.com/sbezhuk/wallshift-ios" target="_blank" rel="noopener noreferrer">github.com/sbezhuk/wallshift-ios</a>
+          <strong>GitHub:</strong> <a href="https://github.com/sbezhuk/wallshift-ios" target="_blank" rel="noopener noreferrer">github.com/sbezhuk/wallshift-ios</a>
         </p>
       </div>
     </div>
 
     <!-- UKRAINIAN SECTION -->
     <div id="section-uk" class="lang-section">
-      <div class="card">
-        <h2><span class="icon">ℹ️</span> 1. Вступ</h2>
+      <div class="highlight-card">
+        <h3>🛡️ Головне: Ми не збираємо жодних даних</h3>
         <p>
-          Ласкаво просимо до гри <strong>WallShift</strong> («ми», «наш» або «нас»), створеної розробником <strong>Степаном Бежуком</strong> (Stepan Bezhuk).
-          Ми поважаємо вашу конфіденційність і прагнемо надійно захищати ваші дані.
-        </p>
-        <p>
-          Ця Політика конфіденційності пояснює, яка інформація збирається, використовується та розкривається під час використання гри <strong>WallShift</strong> на пристроях Apple iOS.
+          <strong>Гра WallShift не збирає, не зберігає, не відстежує, не продає і не передає жодних персональних даних користувачів.</strong> Гра має віковий рейтинг <strong>4+</strong> (від 4 років) та є повністю безпечною і конфіденційною для гравців будь-якого віку, включаючи дітей.
         </p>
       </div>
 
       <div class="card">
-        <h2><span class="icon">💾</span> 2. Дані, які зберігаються локально на вашому пристрої</h2>
+        <h2><span class="icon">ℹ️</span> 1. Вступ</h2>
         <p>
-          WallShift розроблено з повагою до приватності гравців. У грі <strong>немає</strong> обов'язкової реєстрації акаунтів, і ми <strong>не</strong> використовуємо власних віддалених серверів для зберігання вашої особистої інформації.
+          Ця Політика конфіденційності стосується мобільної гри <strong>WallShift</strong> («ми», «наш» або «нас»), створеної розробником <strong>Степаном Бежуком</strong> (Stepan Bezhuk) для пристроїв Apple iOS.
         </p>
-        <p>Усі ігрові дані зберігаються виключно <strong>локально на вашому пристрої</strong> (через вбудоване сховище Apple iOS <code>UserDefaults</code>):</p>
+        <p>
+          Ми поважаємо вашу приватність. WallShift створено так, щоб дарувати приємний ігровий досвід без будь-якого збору особистої інформації та без втручання у приватне життя гравця.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2><span class="icon">🚫</span> 2. Дані, які ми НЕ збираємо</h2>
+        <p>Ми <strong>не</strong> збираємо жодної інформації про вас. Зокрема:</p>
         <ul>
-          <li><strong>Рекорди та статистика:</strong> найкращий результат (хайскор), тижневі бали, кількість стрибків, ухилянь від перешкод та забігів.</li>
-          <li><strong>Ігрова валюта та предмети:</strong> зібрані монети та розблоковані теми персонажів.</li>
-          <li><strong>Досягнення:</strong> розблоковані та отримані нагороди в грі.</li>
-          <li><strong>Налаштування звуку:</strong> гучність фонової музики (BGM), звукових ефектів (SFX) та режим без звуку.</li>
-          <li><strong>Таймери винагород:</strong> локальні позначки часу для контролю періоду очікування між бонусами.</li>
+          <li><strong>Жодних персональних даних:</strong> ми не запитуємо і не зберігаємо ім'я, адресу електронної пошти, номер телефону, вік чи інші особисті дані.</li>
+          <li><strong>Без реєстрації акаунтів:</strong> у грі немає профілів користувачів, паролів чи обов'язкової реєстрації.</li>
+          <li><strong>Без трекінгу та аналітики:</strong> ми не відстежуємо ваші дії та не використовуємо сторонніх аналітичних систем (Google Analytics, Firebase, Facebook SDK тощо).</li>
+          <li><strong>Без ідентифікаторів пристрою:</strong> ми не збираємо рекламний ідентифікатор (IDFA), IDFV, MAC-адресу чи параметри заліза.</li>
+          <li><strong>Без геолокації:</strong> ми не запитуємо і не відстежуємо GPS чи розташування за IP.</li>
+          <li><strong>Без дозволів системи:</strong> гра не вимагає доступу до камери, мікрофона, фотографій, контактів чи календаря.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2><span class="icon">💾</span> 3. Локальне збереження на вашому пристрої</h2>
+        <p>
+          Усі налаштування та досягнення зберігаються <strong>виключно локально на вашому пристрої</strong> за допомогою стандартного системного сховища Apple iOS (<code>UserDefaults</code>).
+        </p>
+        <p>До цих даних належать:</p>
+        <ul>
+          <li>Рекорди та найкращий рахунок забігів</li>
+          <li>Віртуальні монети, зібрані під час гри</li>
+          <li>Розблоковані візуальні теми персонажа та вибрана тема</li>
+          <li>Відкриті внутрішньоігрові досягнення</li>
+          <li>Рівень гучності музики та звукових ефектів</li>
         </ul>
         <div class="callout">
-          <strong>Зверніть увагу:</strong> Оскільки ці дані зберігаються лише на вашому пристрої, видалення гри або очищення даних призведе до втрати збереженого прогресу.
+          <strong>Важливо:</strong> Ці ігрові дані ніколи не передаються в мережу Інтернет, і розробник не має до них доступу. Ви можете видалити всі дані в будь-який момент, просто видаливши гру зі свого пристрою.
         </div>
       </div>
 
       <div class="card">
-        <h2><span class="icon">📢</span> 3. Стороння реклама (Unity Ads)</h2>
+        <h2><span class="icon">👶</span> 4. Конфіденційність дітей (Віковий рейтинг 4+)</h2>
         <p>
-          Для підтримки безкоштовного доступу до гри WallShift використовується сервіс показу реклами <strong>Unity Ads</strong> від компанії <strong>Unity Technologies</strong>.
+          Гра WallShift має віковий рейтинг <strong>4+</strong> (для дітей та дорослих віком від 4 років), є сімейною та абсолютно безпечною.
         </p>
-        <p>Unity Ads забезпечує показ додаткової винагороджуваної відеореклами (наприклад, для відродження персонажа або отримання щоденного бонусу монет) та міжсторінкової реклами.</p>
-        <p>Під час завантаження або показу реклами SDK Unity Ads може збирати та обробляти такі технічні дані:</p>
         <ul>
-          <li><strong>Ідентифікатори пристрою:</strong> рекламний ідентифікатор IDFA (лише якщо ви надали дозвіл через запит Apple App Tracking Transparency), IDFV (ідентифікатор постачальника) або псевдонімні ідентифікатори Unity.</li>
-          <li><strong>Технічні параметри пристрою:</strong> модель пристрою, версія iOS, мова системи, роздільна здатність екрана та часовий пояс.</li>
-          <li><strong>Мережеві дані:</strong> IP-адреса (використовується для визначення приблизного регіону, країни або міста) та тип з'єднання.</li>
-          <li><strong>Дані взаємодії з рекламою:</strong> покази, перегляди, кліки та завершення перегляду відео за винагороду.</li>
-        </ul>
-        <p>
-          Unity Technologies обробляє зазначені дані відповідно до власних стандартів конфіденційності. Детальніше дивіться у <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">Політиці конфіденційності Unity</a>.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2><span class="icon">🌐</span> 4. Перевірка мережевого з'єднання</h2>
-        <p>
-          Гра використовує системний фреймворк Apple <code>NWPathMonitor</code> виключно для перевірки наявності доступу до Інтернету перед запитом реклами. Жодна історія переглядів чи мережеві логи не відстежуються і не передаються.
-        </p>
-      </div>
-
-      <div class="card">
-        <h2><span class="icon">🎯</span> 5. Керування конфіденційністю та відстеженням</h2>
-        <p>Ви маєте повний контроль над використанням рекламних ідентифікаторів у налаштуваннях iOS:</p>
-        <ul>
-          <li><strong>App Tracking Transparency (ATT):</strong> Починаючи з iOS 14.5, ви можете заборонити або дозволити програмі запитувати відстеження в розділі: <code>Параметри &gt; Приватність і безпека &gt; Відстеження &gt; WallShift</code>.</li>
-          <li><strong>Персоналізована реклама Apple:</strong> Можна налаштувати у меню <code>Параметри &gt; Приватність і безпека &gt; Реклама від Apple</code>.</li>
+          <li>Оскільки наш додаток <strong>не збирає жодної персональної інформації</strong>, він повністю відповідає вимогам закону США про захист конфіденційності дітей в Інтернеті (<strong>COPPA</strong>), Регламенту ЄС про захист даних (<strong>GDPR / GDPR-K</strong>) та вимогам Apple до категорій "Для дітей" та "Для всієї родини".</li>
+          <li>Ми свідомо не збираємо і не запитуємо персональних даних у дітей будь-якого віку. Батьки можуть бути повністю впевнені у безпеці своїх дітей під час гри у WallShift.</li>
         </ul>
       </div>
 
       <div class="card">
-        <h2><span class="icon">👶</span> 6. Конфіденційність дітей</h2>
+        <h2><span class="icon">🔗</span> 5. Сторонні сервіси</h2>
         <p>
-          Гра WallShift призначена для широкої аудиторії. Ми свідомо не збираємо та не запитуємо жодних персональних даних дітей віком до 13 років (або до 16 років у країнах ЄС).
-        </p>
-        <p>
-          Якщо вам стало відомо, що дитина надала особисті дані без згоди батьків чи опікунів, будь ласка, зв'яжіться з нами для вжиття відповідних заходів.
+          WallShift не передає і не продає дані жодним стороннім компаніям, рекламним брокерам чи трекерам.
         </p>
       </div>
 
       <div class="card">
-        <h2><span class="icon">⚖️</span> 7. Права користувачів (GDPR та CCPA)</h2>
-        <p>Відповідно до чинного законодавства (включаючи GDPR у Європі та CCPA/CPRA у Каліфорнії), користувачі мають права:</p>
-        <ul>
-          <li><strong>На доступ та інформацію:</strong> отримувати інформацію про категорії зібраних технічних даних.</li>
-          <li><strong>На видалення:</strong> вимагати видалення персональних даних (локальні дані гри ви можете видалити в будь-який момент шляхом видалення програми з пристрою).</li>
-          <li><strong>На відмову від трекінгу:</strong> вимкнути збір персоналізованих даних для цільової реклами у системних параметрах пристрою iOS.</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h2><span class="icon">🔄</span> 8. Зміни до цієї Політики</h2>
+        <h2><span class="icon">⚖️</span> 6. Права користувачів</h2>
         <p>
-          Ми можемо час від часу оновлювати цю Політику конфіденційності у зв'язку з оновленнями гри чи вимогами законодавства. Актуальна версія завжди розміщена на цій сторінці із зазначенням дати останнього оновлення.
+          Згідно з міжнародними стандартами захисту персональних даних (включаючи GDPR), ви маєте право контролювати свої дані. Оскільки ми не зберігаємо ваші персональні дані на жодних зовнішніх серверах, вам не потрібно подавати запити на видалення — всі локальні дані гри повністю під вашим контролем на вашому власному пристрої.
         </p>
       </div>
 
       <div class="card">
-        <h2><span class="icon">📬</span> 9. Контакти для зв'язку</h2>
-        <p>Якщо у вас виникли запитання або пропозиції щодо цієї Політики конфіденційності, звертайтеся:</p>
+        <h2><span class="icon">🔄</span> 7. Зміни до цієї Політики</h2>
+        <p>
+          У разі внесення будь-яких змін до цієї Політики конфіденційності, нова версія буде опублікована на цій сторінці із зазначенням дати оновлення.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2><span class="icon">📬</span> 8. Контакти для зв'язку</h2>
+        <p>Якщо у вас виникли запитання чи пропозиції щодо цієї Політики конфіденційності, звертайтеся:</p>
         <p>
           <strong>Розробник:</strong> Степан Бежук (Stepan Bezhuk)<br>
           <strong>Email:</strong> <a href="mailto:sbezhuk@icloud.com">sbezhuk@icloud.com</a><br>
-          <strong>Репозиторій:</strong> <a href="https://github.com/sbezhuk/wallshift-ios" target="_blank" rel="noopener noreferrer">github.com/sbezhuk/wallshift-ios</a>
+          <strong>GitHub:</strong> <a href="https://github.com/sbezhuk/wallshift-ios" target="_blank" rel="noopener noreferrer">github.com/sbezhuk/wallshift-ios</a>
         </p>
       </div>
     </div>
@@ -464,12 +487,12 @@
         document.querySelectorAll('.lang-btn')[1].classList.add('active');
         document.getElementById('section-uk').classList.add('active');
         document.getElementById('title').innerText = 'Політика конфіденційності';
-        document.getElementById('subtitle').innerText = 'Останнє оновлення: 22 жовтня 2026 р. • Дата набрання чинності: 22 жовтня 2026 р.';
+        document.getElementById('subtitle').innerText = 'Останнє оновлення: 22 жовтня 2026 р. • Віковий рейтинг: 4+';
       } else {
         document.querySelectorAll('.lang-btn')[0].classList.add('active');
         document.getElementById('section-en').classList.add('active');
         document.getElementById('title').innerText = 'Privacy Policy';
-        document.getElementById('subtitle').innerText = 'Last updated: October 22, 2026 • Effective Date: October 22, 2026';
+        document.getElementById('subtitle').innerText = 'Last updated: October 22, 2026 • Age Rating: 4+';
       }
     }
   </script>
